@@ -824,8 +824,6 @@ footer {
 @media (max-width: 380px) {
   .hero-title { font-size: 42px; }
   section { padding: 40px 16px; }
-  #ig-btn span, #sp-btn span { display: none; }
-  #ig-btn::after { content: "@PADOPAROU"; }
 }
 </style>
 
@@ -866,6 +864,9 @@ footer {
   0%   { box-shadow:0 0 4px rgba(29,185,84,0.4); }
   100% { box-shadow:0 0 12px rgba(29,185,84,1),0 0 24px rgba(29,185,84,0.5); }
 }
+@media (max-width: 768px) {
+  #social-bar { height:auto!important;overflow:visible!important;padding:8px 12px!important;flex-wrap:wrap!important; }
+}
 </style>
 </head>
 <body>
@@ -878,7 +879,7 @@ footer {
   </div>
   <div class="nav-right">ALWAYS_AWAY // 08.05.2026</div>
 </nav>
-<div id="social-bar" style="position:fixed;top:48px;left:0;right:0;z-index:99;background:rgba(5,5,8,0.97);border-bottom:1px solid rgba(181,36,90,0.3);min-height:40px;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;">
+<div id="social-bar" style="position:fixed;top:48px;left:0;right:0;z-index:99;background:rgba(5,5,8,0.97);border-bottom:1px solid rgba(181,36,90,0.3);height:40px;display:flex;align-items:center;justify-content:center;gap:20px;overflow:hidden;">
   <a href="https://instagram.com/padoparou" target="_blank" id="ig-btn" style="display:flex;align-items:center;gap:8px;text-decoration:none;color:#B5245A;font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:0.18em;padding:6px 14px;border:1px solid #B5245A;position:relative;overflow:hidden;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg> @PADOPAROU</a>
   <div style="width:1px;height:16px;background:rgba(181,36,90,0.25);"></div>
   <a href="https://open.spotify.com/intl-it/track/4yxHo0Y77MOPlLCexJnpH0?si=2376b3a9531f4979" target="_blank" id="sp-btn" style="display:flex;align-items:center;gap:8px;text-decoration:none;color:#1DB954;font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:0.18em;padding:6px 14px;border:1px solid #1DB954;position:relative;overflow:hidden;"><svg width="12" height="12" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1DB954"/><path d="M17.9 10.9C14.7 9 9.35 8.8 6.3 9.75c-.5.15-1-.15-1.15-.6-.15-.5.15-1 .6-1.15 3.55-1.05 9.4-.85 13.1 1.35.45.25.6.85.35 1.3-.25.35-.85.5-1.3.25zm-.1 2.8c-.25.35-.7.5-1.05.25-2.7-1.65-6.8-2.15-9.95-1.15-.4.1-.85-.1-.95-.5-.1-.4.1-.85.5-.95 3.65-1.1 8.15-.55 11.25 1.35.3.15.45.65.2 1zm-1.2 2.75c-.2.3-.55.4-.85.2-2.35-1.45-5.3-1.75-8.8-.95-.35.1-.65-.15-.75-.45-.1-.35.15-.65.45-.75 3.8-.85 7.1-.5 9.7 1.1.35.15.4.55.25.85z" fill="white"/></svg> SPOTIFY</a>
